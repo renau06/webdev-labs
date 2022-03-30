@@ -19,6 +19,11 @@ body {
     max-height:100%;
 }
 
+.title{
+    padding: 10px;
+    margin: 10px;
+}
+
 .text{
     padding: 10px;
     margin: 10px;
@@ -26,6 +31,4 @@ body {
 
 .button{
     margin: 10px;
-
-
 }
