@@ -86,4 +86,4 @@ UPDATE users SET email='knick2022@gmail.com' WHERE id=26;
 
 
 -- Exercise 14
-SELECT posts.id, posts.user_id, COUNT(*), posts.caption FROM posts JOIN comments ON posts.user_id=comments.user_id WHERE users.user_id=26 GROUP BY id;
+SELECT posts.id, posts.user_id, COUNT(*), posts.caption FROM posts JOIN comments ON posts.id=comments.post_id WHERE posts.user_id=26 GROUP BY posts.id ORDER BY count DESC;
